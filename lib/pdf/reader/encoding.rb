@@ -45,7 +45,8 @@ class PDF::Reader
       elsif enc != nil
         enc = enc.to_sym
       else
-        enc = nil
+        enc = ' '
+        enc = enc.to_sym
       end
 
       @enc_name = enc
